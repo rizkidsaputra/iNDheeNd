@@ -1,0 +1,46 @@
+{
+  "model": "GraphSAGE-GRU",
+  "dataset": "SPOTIFAI pilot non_existing/small/16x/4_attackers",
+  "window": 5,
+  "best_epoch": 20,
+  "validation": {
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "precision_ifa": 1.0,
+    "recall_ifa": 1.0,
+    "f1_ifa": 1.0,
+    "false_positive_rate": 0.0,
+    "confusion_matrix": [
+      [
+        46,
+        0
+      ],
+      [
+        0,
+        248
+      ]
+    ],
+    "loss": 0.00014318534215440227,
+    "n_samples": 294
+  },
+  "test": {
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "precision_ifa": 1.0,
+    "recall_ifa": 1.0,
+    "f1_ifa": 1.0,
+    "false_positive_rate": 0.0,
+    "confusion_matrix": [
+      [
+        46,
+        0
+      ],
+      [
+        0,
+        248
+      ]
+    ],
+    "loss": 0.00014507113874493544,
+    "n_samples": 294
+  }
+}

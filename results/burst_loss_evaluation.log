@@ -1,0 +1,40 @@
+Device: cuda
+
+===== CLEAN =====
+clean_pretrained  BA=1.0000 F1=1.0000 FPR=0.0000 OnsetRecall=1.000 Delay=0
+plain             BA=1.0000 F1=1.0000 FPR=0.0000 OnsetRecall=1.000 Delay=0
+mask              BA=1.0000 F1=1.0000 FPR=0.0000 OnsetRecall=1.000 Delay=0
+mask_age          BA=1.0000 F1=1.0000 FPR=0.0000 OnsetRecall=1.000 Delay=0
+
+===== NORMAL_ALL_20S =====
+clean_pretrained  BA=1.0000 F1=1.0000 FPR=0.0000 OnsetRecall=1.000 Delay=0
+plain             BA=1.0000 F1=1.0000 FPR=0.0000 OnsetRecall=1.000 Delay=0
+mask              BA=1.0000 F1=1.0000 FPR=0.0000 OnsetRecall=1.000 Delay=0
+mask_age          BA=1.0000 F1=1.0000 FPR=0.0000 OnsetRecall=1.000 Delay=0
+
+===== ONSET_ALL_20S =====
+clean_pretrained  BA=0.9718 F1=0.9710 FPR=0.0000 OnsetRecall=0.650 Delay=14
+plain             BA=0.9718 F1=0.9710 FPR=0.0000 OnsetRecall=0.650 Delay=14
+mask              BA=0.9718 F1=0.9710 FPR=0.0000 OnsetRecall=0.650 Delay=14
+mask_age          BA=0.9718 F1=0.9710 FPR=0.0000 OnsetRecall=0.650 Delay=14
+
+===== ONSET_ALL_40S =====
+clean_pretrained  BA=0.9315 F1=0.9264 FPR=0.0000 OnsetRecall=0.150 Delay=34
+plain             BA=0.9315 F1=0.9264 FPR=0.0000 OnsetRecall=0.150 Delay=34
+mask              BA=0.9315 F1=0.9264 FPR=0.0000 OnsetRecall=0.150 Delay=34
+mask_age          BA=0.9315 F1=0.9264 FPR=0.0000 OnsetRecall=0.150 Delay=34
+
+===== ONSET_ROUT5_60S =====
+clean_pretrained  BA=1.0000 F1=1.0000 FPR=0.0000 OnsetRecall=1.000 Delay=0
+plain             BA=1.0000 F1=1.0000 FPR=0.0000 OnsetRecall=1.000 Delay=0
+mask              BA=1.0000 F1=1.0000 FPR=0.0000 OnsetRecall=1.000 Delay=0
+mask_age          BA=1.0000 F1=1.0000 FPR=0.0000 OnsetRecall=1.000 Delay=0
+
+===== ONSET_THREE_60S =====
+clean_pretrained  BA=0.9960 F1=0.9960 FPR=0.0000 OnsetRecall=0.950 Delay=2
+plain             BA=1.0000 F1=1.0000 FPR=0.0000 OnsetRecall=1.000 Delay=0
+mask              BA=1.0000 F1=1.0000 FPR=0.0000 OnsetRecall=1.000 Delay=0
+mask_age          BA=1.0000 F1=1.0000 FPR=0.0000 OnsetRecall=1.000 Delay=0
+
+BURST LOSS EVALUATION COMPLETED
+Results: results/burst_loss_pilot/results.csv

@@ -1,0 +1,113 @@
+Device: cuda
+loss=0% | seed=3031 | clean_pretrained | F1=1.0000 | BA=1.0000 | FPR=0.0000
+loss=0% | seed=3031 | plain            | F1=1.0000 | BA=1.0000 | FPR=0.0000
+loss=0% | seed=3031 | mask             | F1=1.0000 | BA=1.0000 | FPR=0.0000
+loss=0% | seed=3031 | mask_age         | F1=1.0000 | BA=1.0000 | FPR=0.0000
+loss=0% | seed=3032 | clean_pretrained | F1=1.0000 | BA=1.0000 | FPR=0.0000
+loss=0% | seed=3032 | plain            | F1=1.0000 | BA=1.0000 | FPR=0.0000
+loss=0% | seed=3032 | mask             | F1=1.0000 | BA=1.0000 | FPR=0.0000
+loss=0% | seed=3032 | mask_age         | F1=1.0000 | BA=1.0000 | FPR=0.0000
+loss=0% | seed=3033 | clean_pretrained | F1=1.0000 | BA=1.0000 | FPR=0.0000
+loss=0% | seed=3033 | plain            | F1=1.0000 | BA=1.0000 | FPR=0.0000
+loss=0% | seed=3033 | mask             | F1=1.0000 | BA=1.0000 | FPR=0.0000
+loss=0% | seed=3033 | mask_age         | F1=1.0000 | BA=1.0000 | FPR=0.0000
+loss=20% | seed=3031 | clean_pretrained | F1=0.9980 | BA=0.9980 | FPR=0.0000
+loss=20% | seed=3031 | plain            | F1=1.0000 | BA=1.0000 | FPR=0.0000
+loss=20% | seed=3031 | mask             | F1=1.0000 | BA=1.0000 | FPR=0.0000
+loss=20% | seed=3031 | mask_age         | F1=1.0000 | BA=1.0000 | FPR=0.0000
+loss=20% | seed=3032 | clean_pretrained | F1=1.0000 | BA=1.0000 | FPR=0.0000
+loss=20% | seed=3032 | plain            | F1=1.0000 | BA=1.0000 | FPR=0.0000
+loss=20% | seed=3032 | mask             | F1=1.0000 | BA=1.0000 | FPR=0.0000
+loss=20% | seed=3032 | mask_age         | F1=1.0000 | BA=1.0000 | FPR=0.0000
+loss=20% | seed=3033 | clean_pretrained | F1=1.0000 | BA=1.0000 | FPR=0.0000
+loss=20% | seed=3033 | plain            | F1=1.0000 | BA=1.0000 | FPR=0.0000
+loss=20% | seed=3033 | mask             | F1=1.0000 | BA=1.0000 | FPR=0.0000
+loss=20% | seed=3033 | mask_age         | F1=1.0000 | BA=1.0000 | FPR=0.0000
+loss=40% | seed=3031 | clean_pretrained | F1=0.9980 | BA=0.9980 | FPR=0.0000
+loss=40% | seed=3031 | plain            | F1=1.0000 | BA=1.0000 | FPR=0.0000
+loss=40% | seed=3031 | mask             | F1=1.0000 | BA=1.0000 | FPR=0.0000
+loss=40% | seed=3031 | mask_age         | F1=1.0000 | BA=1.0000 | FPR=0.0000
+loss=40% | seed=3032 | clean_pretrained | F1=0.9980 | BA=0.9980 | FPR=0.0000
+loss=40% | seed=3032 | plain            | F1=0.9980 | BA=0.9980 | FPR=0.0000
+loss=40% | seed=3032 | mask             | F1=0.9980 | BA=0.9980 | FPR=0.0000
+loss=40% | seed=3032 | mask_age         | F1=1.0000 | BA=1.0000 | FPR=0.0000
+loss=40% | seed=3033 | clean_pretrained | F1=0.9980 | BA=0.9980 | FPR=0.0000
+loss=40% | seed=3033 | plain            | F1=0.9980 | BA=0.9980 | FPR=0.0000
+loss=40% | seed=3033 | mask             | F1=0.9980 | BA=0.9980 | FPR=0.0000
+loss=40% | seed=3033 | mask_age         | F1=0.9980 | BA=0.9980 | FPR=0.0000
+loss=60% | seed=3031 | clean_pretrained | F1=0.9980 | BA=0.9980 | FPR=0.0000
+loss=60% | seed=3031 | plain            | F1=1.0000 | BA=1.0000 | FPR=0.0000
+loss=60% | seed=3031 | mask             | F1=1.0000 | BA=1.0000 | FPR=0.0000
+loss=60% | seed=3031 | mask_age         | F1=1.0000 | BA=1.0000 | FPR=0.0000
+loss=60% | seed=3032 | clean_pretrained | F1=0.9960 | BA=0.9960 | FPR=0.0000
+loss=60% | seed=3032 | plain            | F1=0.9980 | BA=0.9980 | FPR=0.0000
+loss=60% | seed=3032 | mask             | F1=0.9980 | BA=0.9980 | FPR=0.0000
+loss=60% | seed=3032 | mask_age         | F1=1.0000 | BA=1.0000 | FPR=0.0000
+loss=60% | seed=3033 | clean_pretrained | F1=0.9939 | BA=0.9940 | FPR=0.0000
+loss=60% | seed=3033 | plain            | F1=0.9960 | BA=0.9960 | FPR=0.0000
+loss=60% | seed=3033 | mask             | F1=0.9960 | BA=0.9960 | FPR=0.0000
+loss=60% | seed=3033 | mask_age         | F1=0.9980 | BA=0.9980 | FPR=0.0000
+loss=80% | seed=3031 | clean_pretrained | F1=0.9960 | BA=0.9960 | FPR=0.0000
+loss=80% | seed=3031 | plain            | F1=0.9980 | BA=0.9980 | FPR=0.0000
+loss=80% | seed=3031 | mask             | F1=0.9980 | BA=0.9980 | FPR=0.0000
+loss=80% | seed=3031 | mask_age         | F1=0.9980 | BA=0.9980 | FPR=0.0000
+loss=80% | seed=3032 | clean_pretrained | F1=0.9939 | BA=0.9940 | FPR=0.0000
+loss=80% | seed=3032 | plain            | F1=0.9980 | BA=0.9980 | FPR=0.0000
+loss=80% | seed=3032 | mask             | F1=0.9980 | BA=0.9980 | FPR=0.0000
+loss=80% | seed=3032 | mask_age         | F1=0.9980 | BA=0.9980 | FPR=0.0000
+loss=80% | seed=3033 | clean_pretrained | F1=0.9939 | BA=0.9940 | FPR=0.0000
+loss=80% | seed=3033 | plain            | F1=0.9939 | BA=0.9940 | FPR=0.0000
+loss=80% | seed=3033 | mask             | F1=0.9939 | BA=0.9940 | FPR=0.0000
+loss=80% | seed=3033 | mask_age         | F1=0.9960 | BA=0.9960 | FPR=0.0000
+loss=100% | seed=3031 | clean_pretrained | F1=0.9151 | BA=0.5000 | FPR=1.0000
+loss=100% | seed=3031 | plain            | F1=0.9151 | BA=0.5000 | FPR=1.0000
+loss=100% | seed=3031 | mask             | F1=0.9151 | BA=0.5000 | FPR=1.0000
+loss=100% | seed=3031 | mask_age         | F1=0.9151 | BA=0.5000 | FPR=1.0000
+loss=100% | seed=3032 | clean_pretrained | F1=0.9151 | BA=0.5000 | FPR=1.0000
+loss=100% | seed=3032 | plain            | F1=0.9151 | BA=0.5000 | FPR=1.0000
+loss=100% | seed=3032 | mask             | F1=0.9151 | BA=0.5000 | FPR=1.0000
+loss=100% | seed=3032 | mask_age         | F1=0.9151 | BA=0.5000 | FPR=1.0000
+loss=100% | seed=3033 | clean_pretrained | F1=0.9151 | BA=0.5000 | FPR=1.0000
+loss=100% | seed=3033 | plain            | F1=0.9151 | BA=0.5000 | FPR=1.0000
+loss=100% | seed=3033 | mask             | F1=0.9151 | BA=0.5000 | FPR=1.0000
+loss=100% | seed=3033 | mask_age         | F1=0.9151 | BA=0.5000 | FPR=1.0000
+
+===== STRESS TEST SUMMARY (VALIDATION) =====
+
+Report loss: 0%
+clean_pretrained | F1=1.0000 | BA=1.0000 | FPR=0.0000
+plain            | F1=1.0000 | BA=1.0000 | FPR=0.0000
+mask             | F1=1.0000 | BA=1.0000 | FPR=0.0000
+mask_age         | F1=1.0000 | BA=1.0000 | FPR=0.0000
+
+Report loss: 20%
+clean_pretrained | F1=0.9993 | BA=0.9993 | FPR=0.0000
+plain            | F1=1.0000 | BA=1.0000 | FPR=0.0000
+mask             | F1=1.0000 | BA=1.0000 | FPR=0.0000
+mask_age         | F1=1.0000 | BA=1.0000 | FPR=0.0000
+
+Report loss: 40%
+clean_pretrained | F1=0.9980 | BA=0.9980 | FPR=0.0000
+plain            | F1=0.9987 | BA=0.9987 | FPR=0.0000
+mask             | F1=0.9987 | BA=0.9987 | FPR=0.0000
+mask_age         | F1=0.9993 | BA=0.9993 | FPR=0.0000
+
+Report loss: 60%
+clean_pretrained | F1=0.9959 | BA=0.9960 | FPR=0.0000
+plain            | F1=0.9980 | BA=0.9980 | FPR=0.0000
+mask             | F1=0.9980 | BA=0.9980 | FPR=0.0000
+mask_age         | F1=0.9993 | BA=0.9993 | FPR=0.0000
+
+Report loss: 80%
+clean_pretrained | F1=0.9946 | BA=0.9946 | FPR=0.0000
+plain            | F1=0.9966 | BA=0.9966 | FPR=0.0000
+mask             | F1=0.9966 | BA=0.9966 | FPR=0.0000
+mask_age         | F1=0.9973 | BA=0.9973 | FPR=0.0000
+
+Report loss: 100%
+clean_pretrained | F1=0.9151 | BA=0.5000 | FPR=1.0000
+plain            | F1=0.9151 | BA=0.5000 | FPR=1.0000
+mask             | F1=0.9151 | BA=0.5000 | FPR=1.0000
+mask_age         | F1=0.9151 | BA=0.5000 | FPR=1.0000
+
+Results saved: results/random_loss_stress_pilot

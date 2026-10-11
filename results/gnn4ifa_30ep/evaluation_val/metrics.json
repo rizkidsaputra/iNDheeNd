@@ -1,0 +1,23 @@
+{
+  "n_samples": 298,
+  "actual_normal": 50,
+  "actual_ifa": 248,
+  "predicted_normal": 50,
+  "predicted_ifa": 248,
+  "accuracy": 1.0,
+  "balanced_accuracy": 1.0,
+  "precision_ifa": 1.0,
+  "recall_ifa": 1.0,
+  "f1_ifa": 1.0,
+  "false_positive_rate": 0.0,
+  "confusion_matrix": [
+    [
+      50,
+      0
+    ],
+    [
+      0,
+      248
+    ]
+  ]
+}

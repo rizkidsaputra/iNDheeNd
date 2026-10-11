@@ -1,0 +1,52 @@
+{
+  "model": "GraphSAGE-GRU",
+  "mode": "mask_age",
+  "dataset": "SPOTIFAI",
+  "scenario": "non_existing_small_pilot",
+  "window": 5,
+  "loss_type": "independent_random",
+  "loss_rate": 0.2,
+  "seed": 42,
+  "perturbation_seed": 2026,
+  "best_epoch": 30,
+  "validation": {
+    "accuracy": 0.9965986394557823,
+    "balanced_accuracy": 0.997983870967742,
+    "precision_ifa": 1.0,
+    "recall_ifa": 0.9959677419354839,
+    "f1_ifa": 0.997979797979798,
+    "false_positive_rate": 0.0,
+    "confusion_matrix": [
+      [
+        46,
+        0
+      ],
+      [
+        1,
+        247
+      ]
+    ],
+    "loss": 0.0009763686535907688,
+    "n_samples": 294
+  },
+  "test": {
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "precision_ifa": 1.0,
+    "recall_ifa": 1.0,
+    "f1_ifa": 1.0,
+    "false_positive_rate": 0.0,
+    "confusion_matrix": [
+      [
+        46,
+        0
+      ],
+      [
+        0,
+        248
+      ]
+    ],
+    "loss": 0.00036512010008503355,
+    "n_samples": 294
+  }
+}

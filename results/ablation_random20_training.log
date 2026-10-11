@@ -1,0 +1,204 @@
+Device: cuda
+Loss rate: 0.2
+Perturbation seed: 2026
+Validation/test perturbations distinct: PASSED
+
+===== CLEAN MODEL UNDER 20% LOSS =====
+{
+  "accuracy": 0.9965986394557823,
+  "balanced_accuracy": 0.997983870967742,
+  "precision_ifa": 1.0,
+  "recall_ifa": 0.9959677419354839,
+  "f1_ifa": 0.997979797979798,
+  "false_positive_rate": 0.0,
+  "confusion_matrix": [
+    [
+      46,
+      0
+    ],
+    [
+      1,
+      247
+    ]
+  ],
+  "loss": 0.001038725270908409,
+  "n_samples": 294
+}
+
+=======================================================
+TRAINING VARIANT: PLAIN
+=======================================================
+plain    | Epoch 01/30 | Train F1=0.9335 | Val F1=0.9939 | Val loss=0.010675
+plain    | Epoch 02/30 | Train F1=0.9966 | Val F1=0.9980 | Val loss=0.005000
+plain    | Epoch 03/30 | Train F1=0.9980 | Val F1=0.9960 | Val loss=0.004623
+plain    | Epoch 04/30 | Train F1=0.9980 | Val F1=0.9980 | Val loss=0.003032
+plain    | Epoch 05/30 | Train F1=0.9987 | Val F1=0.9980 | Val loss=0.002998
+plain    | Epoch 06/30 | Train F1=0.9987 | Val F1=0.9980 | Val loss=0.003264
+plain    | Epoch 07/30 | Train F1=0.9993 | Val F1=0.9980 | Val loss=0.002546
+plain    | Epoch 08/30 | Train F1=0.9993 | Val F1=0.9980 | Val loss=0.002233
+plain    | Epoch 09/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.002796
+plain    | Epoch 10/30 | Train F1=0.9993 | Val F1=0.9980 | Val loss=0.002145
+plain    | Epoch 11/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.002800
+plain    | Epoch 12/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.002408
+plain    | Epoch 13/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.002392
+plain    | Epoch 14/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.002343
+plain    | Epoch 15/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.002214
+plain    | Epoch 16/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.002577
+plain    | Epoch 17/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.002630
+plain    | Epoch 18/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.002261
+plain    | Epoch 19/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.002290
+plain    | Epoch 20/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.002330
+plain    | Epoch 21/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.001688
+plain    | Epoch 22/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.002048
+plain    | Epoch 23/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.001925
+plain    | Epoch 24/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.001917
+plain    | Epoch 25/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.001503
+plain    | Epoch 26/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.001718
+plain    | Epoch 27/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.001700
+plain    | Epoch 28/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.002236
+plain    | Epoch 29/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.001873
+plain    | Epoch 30/30 | Train F1=0.9993 | Val F1=0.9980 | Val loss=0.001269
+
+===== FINAL TEST: PLAIN =====
+{
+  "accuracy": 1.0,
+  "balanced_accuracy": 1.0,
+  "precision_ifa": 1.0,
+  "recall_ifa": 1.0,
+  "f1_ifa": 1.0,
+  "false_positive_rate": 0.0,
+  "confusion_matrix": [
+    [
+      46,
+      0
+    ],
+    [
+      0,
+      248
+    ]
+  ],
+  "loss": 0.00039601321413144995,
+  "n_samples": 294
+}
+
+=======================================================
+TRAINING VARIANT: MASK
+=======================================================
+mask     | Epoch 01/30 | Train F1=0.9446 | Val F1=0.9939 | Val loss=0.016858
+mask     | Epoch 02/30 | Train F1=0.9966 | Val F1=0.9960 | Val loss=0.004943
+mask     | Epoch 03/30 | Train F1=0.9980 | Val F1=0.9960 | Val loss=0.005240
+mask     | Epoch 04/30 | Train F1=0.9980 | Val F1=0.9980 | Val loss=0.003507
+mask     | Epoch 05/30 | Train F1=0.9987 | Val F1=0.9980 | Val loss=0.003319
+mask     | Epoch 06/30 | Train F1=0.9987 | Val F1=0.9980 | Val loss=0.003709
+mask     | Epoch 07/30 | Train F1=0.9987 | Val F1=0.9980 | Val loss=0.002658
+mask     | Epoch 08/30 | Train F1=0.9987 | Val F1=0.9980 | Val loss=0.002321
+mask     | Epoch 09/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.002820
+mask     | Epoch 10/30 | Train F1=0.9993 | Val F1=0.9980 | Val loss=0.002144
+mask     | Epoch 11/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.002821
+mask     | Epoch 12/30 | Train F1=0.9993 | Val F1=0.9980 | Val loss=0.002545
+mask     | Epoch 13/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.002259
+mask     | Epoch 14/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.002242
+mask     | Epoch 15/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.002093
+mask     | Epoch 16/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.002336
+mask     | Epoch 17/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.002373
+mask     | Epoch 18/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.002185
+mask     | Epoch 19/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.002267
+mask     | Epoch 20/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.002233
+mask     | Epoch 21/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.001573
+mask     | Epoch 22/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.001757
+mask     | Epoch 23/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.001697
+mask     | Epoch 24/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.001781
+mask     | Epoch 25/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.001416
+mask     | Epoch 26/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.001397
+mask     | Epoch 27/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.001434
+mask     | Epoch 28/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.001924
+mask     | Epoch 29/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.001659
+mask     | Epoch 30/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.001136
+
+===== FINAL TEST: MASK =====
+{
+  "accuracy": 1.0,
+  "balanced_accuracy": 1.0,
+  "precision_ifa": 1.0,
+  "recall_ifa": 1.0,
+  "f1_ifa": 1.0,
+  "false_positive_rate": 0.0,
+  "confusion_matrix": [
+    [
+      46,
+      0
+    ],
+    [
+      0,
+      248
+    ]
+  ],
+  "loss": 0.0003569777548110404,
+  "n_samples": 294
+}
+
+=======================================================
+TRAINING VARIANT: MASK_AGE
+=======================================================
+mask_age | Epoch 01/30 | Train F1=0.9242 | Val F1=0.9939 | Val loss=0.014211
+mask_age | Epoch 02/30 | Train F1=0.9966 | Val F1=0.9980 | Val loss=0.004879
+mask_age | Epoch 03/30 | Train F1=0.9980 | Val F1=0.9960 | Val loss=0.004549
+mask_age | Epoch 04/30 | Train F1=0.9980 | Val F1=0.9980 | Val loss=0.002979
+mask_age | Epoch 05/30 | Train F1=0.9987 | Val F1=0.9980 | Val loss=0.002806
+mask_age | Epoch 06/30 | Train F1=0.9987 | Val F1=0.9980 | Val loss=0.002826
+mask_age | Epoch 07/30 | Train F1=0.9993 | Val F1=0.9980 | Val loss=0.002348
+mask_age | Epoch 08/30 | Train F1=0.9993 | Val F1=0.9980 | Val loss=0.001883
+mask_age | Epoch 09/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.002413
+mask_age | Epoch 10/30 | Train F1=0.9993 | Val F1=0.9980 | Val loss=0.001819
+mask_age | Epoch 11/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.002402
+mask_age | Epoch 12/30 | Train F1=0.9993 | Val F1=0.9980 | Val loss=0.002032
+mask_age | Epoch 13/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.001930
+mask_age | Epoch 14/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.001972
+mask_age | Epoch 15/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.001800
+mask_age | Epoch 16/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.002092
+mask_age | Epoch 17/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.002125
+mask_age | Epoch 18/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.001782
+mask_age | Epoch 19/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.001852
+mask_age | Epoch 20/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.001988
+mask_age | Epoch 21/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.001351
+mask_age | Epoch 22/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.001389
+mask_age | Epoch 23/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.001353
+mask_age | Epoch 24/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.001372
+mask_age | Epoch 25/30 | Train F1=0.9993 | Val F1=0.9980 | Val loss=0.001196
+mask_age | Epoch 26/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.001061
+mask_age | Epoch 27/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.001115
+mask_age | Epoch 28/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.001694
+mask_age | Epoch 29/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.001368
+mask_age | Epoch 30/30 | Train F1=1.0000 | Val F1=0.9980 | Val loss=0.000976
+
+===== FINAL TEST: MASK_AGE =====
+{
+  "accuracy": 1.0,
+  "balanced_accuracy": 1.0,
+  "precision_ifa": 1.0,
+  "recall_ifa": 1.0,
+  "f1_ifa": 1.0,
+  "false_positive_rate": 0.0,
+  "confusion_matrix": [
+    [
+      46,
+      0
+    ],
+    [
+      0,
+      248
+    ]
+  ],
+  "loss": 0.00036512010008503355,
+  "n_samples": 294
+}
+
+===========================================================================
+ABLATION SUMMARY - TEST SET
+===========================================================================
+clean_pretrained     | Acc=0.9966 | F1=0.9980 | Recall=0.9960 | FPR=0.0000
+plain                | Acc=1.0000 | F1=1.0000 | Recall=1.0000 | FPR=0.0000
+mask                 | Acc=1.0000 | F1=1.0000 | Recall=1.0000 | FPR=0.0000
+mask_age             | Acc=1.0000 | F1=1.0000 | Recall=1.0000 | FPR=0.0000
+
+Results saved: results/ablation_random_loss20_seed2026
