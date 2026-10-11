@@ -1,0 +1,25 @@
+# Logical pilot topology for the ndnSIM scenario
+# R5-R6 is the monitored bottleneck.
+R1 R5 100Mbps 5ms
+R2 R5 100Mbps 5ms
+R3 R5 100Mbps 5ms
+R4 R5 100Mbps 5ms
+R5 R6 5Mbps 10ms
+R6 R7 100Mbps 5ms
+R6 R8 100Mbps 5ms
+R7 R9 100Mbps 5ms
+R8 R9 100Mbps 5ms
+R7 R10 100Mbps 5ms
+
+# endpoints
+C1 R1
+A1 R1
+C2 R2
+A2 R2
+C3 R3
+C4 R3
+C5 R4
+C6 R4
+P1 R9
+P2 R8
+M R10

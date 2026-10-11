@@ -1,0 +1,61 @@
+# GNN4IFA Robust IFA pilot configuration
+# This file is an experiment input, not an empirical result.
+platform: minindn
+seed: 1
+duration_seconds: 180
+warmup_seconds: 30
+attack_start_seconds: 60
+attack_end_seconds: 150
+poll_interval_seconds: 1
+decision_deadline_seconds: 1
+report_size_bytes: 512
+
+topology:
+  routers: [R1, R2, R3, R4, R5, R6, R7, R8, R9, R10]
+  edges:
+    - [R1, R5]
+    - [R2, R5]
+    - [R3, R5]
+    - [R4, R5]
+    - [R5, R6]
+    - [R6, R7]
+    - [R6, R8]
+    - [R7, R9]
+    - [R8, R9]
+    - [R7, R10]
+  bottleneck: [R5, R6]
+  ordinary_link_rate_mbps: 100
+  ordinary_link_delay_ms: 5
+  bottleneck_rate_mbps: 5
+  bottleneck_delay_ms: 10
+  queue_packets: 50
+
+roles:
+  consumers: {C1: R1, C2: R2, C3: R3, C4: R3, C5: R4, C6: R4}
+  attackers: {A1: R1, A2: R2}
+  producers: {P1: R9, P2: R8}
+  collector: {M: R10}
+
+attack:
+  name_prefix: /target/attack
+  content_available: false
+  interest_lifetime_seconds: 4
+  rates_interests_per_second: [100, 500, 1000]
+  # Fast NACKs can prevent PIT pressure; verify PIT occupancy before main runs.
+
+detector:
+  window_seconds: 10
+  hidden_size: 32
+  graphsage_layers: 2
+  gru_size: 32
+  mlp_layers: [64, 32, 1]
+  batch_sizes: [8, 16]
+  max_epochs: 50
+
+telemetry:
+  features: [interest_in, interest_out, data_in, data_out, pit_entries, expirations, satisfaction, drops]
+  include_availability_mask: true
+  include_report_age: true
+  include_never_observed: true
+  unique_name_fields: [monitor, router_id, report, sequence]
+  log_fields: [generation_time, arrival_time, queue_drops, pit_rejections, nacks, timeouts, direction]
