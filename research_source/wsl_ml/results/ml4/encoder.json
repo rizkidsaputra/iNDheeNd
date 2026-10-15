@@ -1,0 +1,53 @@
+{
+  "method": "ML4_causal_mask_age",
+  "input_dim": 13,
+  "channel_names": [
+    "nInInterests_rate",
+    "nOutInterests_rate",
+    "nInData_rate",
+    "nOutData_rate",
+    "nInNacks_rate",
+    "nOutNacks_rate",
+    "nSatisfiedInterests_rate",
+    "nUnsatisfiedInterests_rate",
+    "nPitEntries",
+    "nCsEntries",
+    "mask",
+    "age_log1p_standardized",
+    "age_valid"
+  ],
+  "train_runs": [
+    "safety150_b0_m0_v8",
+    "safety150_b1_m0_v8",
+    "safety150_a1_m0_v8",
+    "m1dev_v14_r01_b0"
+  ],
+  "age_transform": "log1p_standardization",
+  "age_mean": 1.231696677406792,
+  "age_std": 0.23647515884028994,
+  "feature_mean": [
+    2.6577389463376755,
+    2.659385410883374,
+    2.5850791177228976,
+    2.5844137082742695,
+    0.0,
+    0.0,
+    2.5844359471262686,
+    0.19726832776194447,
+    1.7321519385940807,
+    8.720341761343223
+  ],
+  "feature_std": [
+    0.8274662267670558,
+    0.8272692780615003,
+    0.7861596427082153,
+    0.786132070176958,
+    1e-06,
+    1e-06,
+    0.7861548543891005,
+    0.7985828756144703,
+    0.7918729569846438,
+    0.7554822920616623
+  ],
+  "missing_policy": "Missing feature values zero-filled after feature scaling; invalid Age zero-filled after Age scaling, with age_valid retained."
+}

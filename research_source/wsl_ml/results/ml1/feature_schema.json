@@ -1,0 +1,59 @@
+{
+  "router_order": [
+    "r1",
+    "r2",
+    "r3",
+    "r4",
+    "r5",
+    "r6",
+    "r7",
+    "r8",
+    "r9",
+    "r10"
+  ],
+  "raw_features": [
+    "nInInterests",
+    "nOutInterests",
+    "nInData",
+    "nOutData",
+    "nInNacks",
+    "nOutNacks",
+    "nSatisfiedInterests",
+    "nUnsatisfiedInterests",
+    "nPitEntries",
+    "nCsEntries"
+  ],
+  "derived_model_feature_candidates": [
+    "nInInterests_rate",
+    "nOutInterests_rate",
+    "nInData_rate",
+    "nOutData_rate",
+    "nInNacks_rate",
+    "nOutNacks_rate",
+    "nSatisfiedInterests_rate",
+    "nUnsatisfiedInterests_rate",
+    "nPitEntries",
+    "nCsEntries"
+  ],
+  "additional_inputs": [
+    "mask",
+    "age_seconds"
+  ],
+  "rate_policy": "Nonnegative delta between consecutive on-time collector observations of the same NFD instance, divided by actual source sampling elapsed time. First observation and resets remain missing.",
+  "missing_policy": "No source audit, future value or unobserved telemetry is used for imputation.",
+  "label_policy": "Temporal attack-active label using workload ground-truth intervals evaluated at decision_ns.",
+  "excluded_from_model_inputs": [
+    "run_id",
+    "mode_audit",
+    "impairment_audit",
+    "protocol_stratum",
+    "label_attack_active",
+    "router_id",
+    "sequence",
+    "decision_ns",
+    "created_ns_observed",
+    "received_ns_observed",
+    "last_on_time_sequence"
+  ],
+  "model_readiness": "Feature engineering candidate only; graph topology, normalization, label QA and causal tests remain gates."
+}

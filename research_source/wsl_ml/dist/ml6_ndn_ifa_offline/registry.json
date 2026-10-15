@@ -1,0 +1,602 @@
+{
+  "schema_version": 1,
+  "name": "ndn_ifa_ml6_offline",
+  "status": "experimental",
+  "threshold": 0.5,
+  "label_mapping": {
+    "0": "Normal",
+    "1": "IFA"
+  },
+  "router_order": [
+    "r1",
+    "r2",
+    "r3",
+    "r4",
+    "r5",
+    "r6",
+    "r7",
+    "r8",
+    "r9",
+    "r10"
+  ],
+  "window_steps": 5,
+  "interval_seconds": 3,
+  "node_count": 10,
+  "feature_count": 10,
+  "encoded_channels": 13,
+  "edge_index_path": "assets/edge_index.npy",
+  "edge_index_sha256": "0485932a8e18b5b56b5d2447b26e706dac759916af2b8d8198b4b9bfa45bb4ea",
+  "runtime_sha256": {
+    "src/ml3_preprocessing.py": "a4b2e00f8da6ca6e47b6cadfcda968f1adde82e87518a8e9a5c0a1f07deed539",
+    "src/ml4_observation.py": "5546fe6bb98bc41cc6fa256a35d3040f7dcf5e9994f0accfd95f182e59a23638",
+    "src/models/graphsage_gru.py": "3f7641523c19c6fc833bfb34866800fa080f8f685433b46eff59c6da51ef1c1b",
+    "scripts/ml6_workflow.py": "9a765c0d16051cc83b34a693e10f8ec3ddd24f1801c65d810ed39267f670a4d6"
+  },
+  "models": [
+    {
+      "id": "ml5a_mask_age_s42",
+      "experiment": "ml5a",
+      "direction": "original_split",
+      "variant": "mask_age",
+      "seed": 42,
+      "checkpoint": "models/ml5a/mask_age_seed42.pt",
+      "checkpoint_sha256": "93480bdc29f357f40ae19e3f8bbb9b0681804454f411fe26ee9c1b51f26ce432",
+      "encoder": "encoders/ml5a/encoder.json",
+      "encoder_sha256": "6e956da31bc426ad800e00b558263aca69ed5cf0bb071aa9b408d7f0fe3ede08",
+      "train_runs": [
+        "safety150_b0_m0_v8",
+        "safety150_b1_m0_v8",
+        "safety150_a1_m0_v8",
+        "m1dev_v14_r01_b0"
+      ],
+      "replay_runs": [
+        "m1dev_v16_r01_b1",
+        "m1dev_v16_r02_a1"
+      ],
+      "reference": "ml5a"
+    },
+    {
+      "id": "ml5a_mask_age_s52",
+      "experiment": "ml5a",
+      "direction": "original_split",
+      "variant": "mask_age",
+      "seed": 52,
+      "checkpoint": "models/ml5a/mask_age_seed52.pt",
+      "checkpoint_sha256": "145aef31e39bce0c2f1022422376e02fbb7e43a652cad5bd49916be930bd8248",
+      "encoder": "encoders/ml5a/encoder.json",
+      "encoder_sha256": "6e956da31bc426ad800e00b558263aca69ed5cf0bb071aa9b408d7f0fe3ede08",
+      "train_runs": [
+        "safety150_b0_m0_v8",
+        "safety150_b1_m0_v8",
+        "safety150_a1_m0_v8",
+        "m1dev_v14_r01_b0"
+      ],
+      "replay_runs": [
+        "m1dev_v16_r01_b1",
+        "m1dev_v16_r02_a1"
+      ],
+      "reference": "ml5a"
+    },
+    {
+      "id": "ml5a_mask_age_s62",
+      "experiment": "ml5a",
+      "direction": "original_split",
+      "variant": "mask_age",
+      "seed": 62,
+      "checkpoint": "models/ml5a/mask_age_seed62.pt",
+      "checkpoint_sha256": "c1508e83dac82fe376942e84be557539943104831ee66d652085b986d195680d",
+      "encoder": "encoders/ml5a/encoder.json",
+      "encoder_sha256": "6e956da31bc426ad800e00b558263aca69ed5cf0bb071aa9b408d7f0fe3ede08",
+      "train_runs": [
+        "safety150_b0_m0_v8",
+        "safety150_b1_m0_v8",
+        "safety150_a1_m0_v8",
+        "m1dev_v14_r01_b0"
+      ],
+      "replay_runs": [
+        "m1dev_v16_r01_b1",
+        "m1dev_v16_r02_a1"
+      ],
+      "reference": "ml5a"
+    },
+    {
+      "id": "ml5a_mask_s42",
+      "experiment": "ml5a",
+      "direction": "original_split",
+      "variant": "mask",
+      "seed": 42,
+      "checkpoint": "models/ml5a/mask_seed42.pt",
+      "checkpoint_sha256": "5be890e6ba453e279bd0239e12a510db3fcaf23e3602b425d9dd5d9f33f2f657",
+      "encoder": "encoders/ml5a/encoder.json",
+      "encoder_sha256": "6e956da31bc426ad800e00b558263aca69ed5cf0bb071aa9b408d7f0fe3ede08",
+      "train_runs": [
+        "safety150_b0_m0_v8",
+        "safety150_b1_m0_v8",
+        "safety150_a1_m0_v8",
+        "m1dev_v14_r01_b0"
+      ],
+      "replay_runs": [
+        "m1dev_v16_r01_b1",
+        "m1dev_v16_r02_a1"
+      ],
+      "reference": "ml5a"
+    },
+    {
+      "id": "ml5a_mask_s52",
+      "experiment": "ml5a",
+      "direction": "original_split",
+      "variant": "mask",
+      "seed": 52,
+      "checkpoint": "models/ml5a/mask_seed52.pt",
+      "checkpoint_sha256": "40d4e2ddda0b7b91ce3dac294a718dac74f718a2abcc6977029a0818f74bdc39",
+      "encoder": "encoders/ml5a/encoder.json",
+      "encoder_sha256": "6e956da31bc426ad800e00b558263aca69ed5cf0bb071aa9b408d7f0fe3ede08",
+      "train_runs": [
+        "safety150_b0_m0_v8",
+        "safety150_b1_m0_v8",
+        "safety150_a1_m0_v8",
+        "m1dev_v14_r01_b0"
+      ],
+      "replay_runs": [
+        "m1dev_v16_r01_b1",
+        "m1dev_v16_r02_a1"
+      ],
+      "reference": "ml5a"
+    },
+    {
+      "id": "ml5a_mask_s62",
+      "experiment": "ml5a",
+      "direction": "original_split",
+      "variant": "mask",
+      "seed": 62,
+      "checkpoint": "models/ml5a/mask_seed62.pt",
+      "checkpoint_sha256": "3c27c148c0a233eeea524dfba065c332b1fb7836a5a1de0b70e698bb1b4a4006",
+      "encoder": "encoders/ml5a/encoder.json",
+      "encoder_sha256": "6e956da31bc426ad800e00b558263aca69ed5cf0bb071aa9b408d7f0fe3ede08",
+      "train_runs": [
+        "safety150_b0_m0_v8",
+        "safety150_b1_m0_v8",
+        "safety150_a1_m0_v8",
+        "m1dev_v14_r01_b0"
+      ],
+      "replay_runs": [
+        "m1dev_v16_r01_b1",
+        "m1dev_v16_r02_a1"
+      ],
+      "reference": "ml5a"
+    },
+    {
+      "id": "ml5a_plain_s42",
+      "experiment": "ml5a",
+      "direction": "original_split",
+      "variant": "plain",
+      "seed": 42,
+      "checkpoint": "models/ml5a/plain_seed42.pt",
+      "checkpoint_sha256": "6afad152898a55eaa16b6e5f61f53be2422c17bd5bf5e0f17a4d8637172a21a8",
+      "encoder": "encoders/ml5a/encoder.json",
+      "encoder_sha256": "6e956da31bc426ad800e00b558263aca69ed5cf0bb071aa9b408d7f0fe3ede08",
+      "train_runs": [
+        "safety150_b0_m0_v8",
+        "safety150_b1_m0_v8",
+        "safety150_a1_m0_v8",
+        "m1dev_v14_r01_b0"
+      ],
+      "replay_runs": [
+        "m1dev_v16_r01_b1",
+        "m1dev_v16_r02_a1"
+      ],
+      "reference": "ml5a"
+    },
+    {
+      "id": "ml5a_plain_s52",
+      "experiment": "ml5a",
+      "direction": "original_split",
+      "variant": "plain",
+      "seed": 52,
+      "checkpoint": "models/ml5a/plain_seed52.pt",
+      "checkpoint_sha256": "558276970157d425352cc29af73a105453c97823f8d8ef02682050f6001d4e32",
+      "encoder": "encoders/ml5a/encoder.json",
+      "encoder_sha256": "6e956da31bc426ad800e00b558263aca69ed5cf0bb071aa9b408d7f0fe3ede08",
+      "train_runs": [
+        "safety150_b0_m0_v8",
+        "safety150_b1_m0_v8",
+        "safety150_a1_m0_v8",
+        "m1dev_v14_r01_b0"
+      ],
+      "replay_runs": [
+        "m1dev_v16_r01_b1",
+        "m1dev_v16_r02_a1"
+      ],
+      "reference": "ml5a"
+    },
+    {
+      "id": "ml5a_plain_s62",
+      "experiment": "ml5a",
+      "direction": "original_split",
+      "variant": "plain",
+      "seed": 62,
+      "checkpoint": "models/ml5a/plain_seed62.pt",
+      "checkpoint_sha256": "224c0af8bcfb5643fbae6361b154d0d1a66c153ccbf266dc4503342407295c3e",
+      "encoder": "encoders/ml5a/encoder.json",
+      "encoder_sha256": "6e956da31bc426ad800e00b558263aca69ed5cf0bb071aa9b408d7f0fe3ede08",
+      "train_runs": [
+        "safety150_b0_m0_v8",
+        "safety150_b1_m0_v8",
+        "safety150_a1_m0_v8",
+        "m1dev_v14_r01_b0"
+      ],
+      "replay_runs": [
+        "m1dev_v16_r01_b1",
+        "m1dev_v16_r02_a1"
+      ],
+      "reference": "ml5a"
+    },
+    {
+      "id": "ml5d_m0_to_m1_mask_age_s42",
+      "experiment": "ml5d",
+      "direction": "m0_to_m1",
+      "variant": "mask_age",
+      "seed": 42,
+      "checkpoint": "models/ml5d/m0_to_m1/mask_age_seed42.pt",
+      "checkpoint_sha256": "4be84e6a9bab422d3758c87275c4845725f72c568a442aac720286da310b8dc2",
+      "encoder": "encoders/ml5d/m0_to_m1/encoder.json",
+      "encoder_sha256": "30485608a18b8fee60b2768559a186ba7a74f70696f7306704895fbf5f64e73c",
+      "train_runs": [
+        "safety150_b1_m0_v8",
+        "safety150_a1_m0_v8"
+      ],
+      "replay_runs": [
+        "m1dev_v16_r01_b1",
+        "m1dev_v16_r02_a1"
+      ],
+      "reference": "ml5d"
+    },
+    {
+      "id": "ml5d_m0_to_m1_mask_age_s52",
+      "experiment": "ml5d",
+      "direction": "m0_to_m1",
+      "variant": "mask_age",
+      "seed": 52,
+      "checkpoint": "models/ml5d/m0_to_m1/mask_age_seed52.pt",
+      "checkpoint_sha256": "0f7b2bf695aa7cd6d90aae207376cdb5b49a4c037c23b098f4e7fa33df0e8bd0",
+      "encoder": "encoders/ml5d/m0_to_m1/encoder.json",
+      "encoder_sha256": "30485608a18b8fee60b2768559a186ba7a74f70696f7306704895fbf5f64e73c",
+      "train_runs": [
+        "safety150_b1_m0_v8",
+        "safety150_a1_m0_v8"
+      ],
+      "replay_runs": [
+        "m1dev_v16_r01_b1",
+        "m1dev_v16_r02_a1"
+      ],
+      "reference": "ml5d"
+    },
+    {
+      "id": "ml5d_m0_to_m1_mask_age_s62",
+      "experiment": "ml5d",
+      "direction": "m0_to_m1",
+      "variant": "mask_age",
+      "seed": 62,
+      "checkpoint": "models/ml5d/m0_to_m1/mask_age_seed62.pt",
+      "checkpoint_sha256": "6f6c663daf202f030f8cf20c7ba9edae5ed8783370b0ae48844e1d74348ccafa",
+      "encoder": "encoders/ml5d/m0_to_m1/encoder.json",
+      "encoder_sha256": "30485608a18b8fee60b2768559a186ba7a74f70696f7306704895fbf5f64e73c",
+      "train_runs": [
+        "safety150_b1_m0_v8",
+        "safety150_a1_m0_v8"
+      ],
+      "replay_runs": [
+        "m1dev_v16_r01_b1",
+        "m1dev_v16_r02_a1"
+      ],
+      "reference": "ml5d"
+    },
+    {
+      "id": "ml5d_m0_to_m1_mask_s42",
+      "experiment": "ml5d",
+      "direction": "m0_to_m1",
+      "variant": "mask",
+      "seed": 42,
+      "checkpoint": "models/ml5d/m0_to_m1/mask_seed42.pt",
+      "checkpoint_sha256": "407993b286efb5665e0cabaa611718b585d9484a9e209e1debbcdee7fdc6562e",
+      "encoder": "encoders/ml5d/m0_to_m1/encoder.json",
+      "encoder_sha256": "30485608a18b8fee60b2768559a186ba7a74f70696f7306704895fbf5f64e73c",
+      "train_runs": [
+        "safety150_b1_m0_v8",
+        "safety150_a1_m0_v8"
+      ],
+      "replay_runs": [
+        "m1dev_v16_r01_b1",
+        "m1dev_v16_r02_a1"
+      ],
+      "reference": "ml5d"
+    },
+    {
+      "id": "ml5d_m0_to_m1_mask_s52",
+      "experiment": "ml5d",
+      "direction": "m0_to_m1",
+      "variant": "mask",
+      "seed": 52,
+      "checkpoint": "models/ml5d/m0_to_m1/mask_seed52.pt",
+      "checkpoint_sha256": "c438d9b15f76f35845d525fabccd6e106a0becf280895293b86430abc80ae6cb",
+      "encoder": "encoders/ml5d/m0_to_m1/encoder.json",
+      "encoder_sha256": "30485608a18b8fee60b2768559a186ba7a74f70696f7306704895fbf5f64e73c",
+      "train_runs": [
+        "safety150_b1_m0_v8",
+        "safety150_a1_m0_v8"
+      ],
+      "replay_runs": [
+        "m1dev_v16_r01_b1",
+        "m1dev_v16_r02_a1"
+      ],
+      "reference": "ml5d"
+    },
+    {
+      "id": "ml5d_m0_to_m1_mask_s62",
+      "experiment": "ml5d",
+      "direction": "m0_to_m1",
+      "variant": "mask",
+      "seed": 62,
+      "checkpoint": "models/ml5d/m0_to_m1/mask_seed62.pt",
+      "checkpoint_sha256": "01ad0f9150d25a0409216af2298b809a5ed33daef965f516637cc82d8fe0cbda",
+      "encoder": "encoders/ml5d/m0_to_m1/encoder.json",
+      "encoder_sha256": "30485608a18b8fee60b2768559a186ba7a74f70696f7306704895fbf5f64e73c",
+      "train_runs": [
+        "safety150_b1_m0_v8",
+        "safety150_a1_m0_v8"
+      ],
+      "replay_runs": [
+        "m1dev_v16_r01_b1",
+        "m1dev_v16_r02_a1"
+      ],
+      "reference": "ml5d"
+    },
+    {
+      "id": "ml5d_m0_to_m1_plain_s42",
+      "experiment": "ml5d",
+      "direction": "m0_to_m1",
+      "variant": "plain",
+      "seed": 42,
+      "checkpoint": "models/ml5d/m0_to_m1/plain_seed42.pt",
+      "checkpoint_sha256": "6f2de6be331b3d75bac0b90aa6356a19f618e5620389237945be7a5a4d38d702",
+      "encoder": "encoders/ml5d/m0_to_m1/encoder.json",
+      "encoder_sha256": "30485608a18b8fee60b2768559a186ba7a74f70696f7306704895fbf5f64e73c",
+      "train_runs": [
+        "safety150_b1_m0_v8",
+        "safety150_a1_m0_v8"
+      ],
+      "replay_runs": [
+        "m1dev_v16_r01_b1",
+        "m1dev_v16_r02_a1"
+      ],
+      "reference": "ml5d"
+    },
+    {
+      "id": "ml5d_m0_to_m1_plain_s52",
+      "experiment": "ml5d",
+      "direction": "m0_to_m1",
+      "variant": "plain",
+      "seed": 52,
+      "checkpoint": "models/ml5d/m0_to_m1/plain_seed52.pt",
+      "checkpoint_sha256": "1d6c9e311557101147cf73d4b97e9a7363b3ccdd7b6740627a4c28adfd2a695d",
+      "encoder": "encoders/ml5d/m0_to_m1/encoder.json",
+      "encoder_sha256": "30485608a18b8fee60b2768559a186ba7a74f70696f7306704895fbf5f64e73c",
+      "train_runs": [
+        "safety150_b1_m0_v8",
+        "safety150_a1_m0_v8"
+      ],
+      "replay_runs": [
+        "m1dev_v16_r01_b1",
+        "m1dev_v16_r02_a1"
+      ],
+      "reference": "ml5d"
+    },
+    {
+      "id": "ml5d_m0_to_m1_plain_s62",
+      "experiment": "ml5d",
+      "direction": "m0_to_m1",
+      "variant": "plain",
+      "seed": 62,
+      "checkpoint": "models/ml5d/m0_to_m1/plain_seed62.pt",
+      "checkpoint_sha256": "eeb9b1ca3a9072c64587916fa790734357c780980d30608fbf6556401004d02f",
+      "encoder": "encoders/ml5d/m0_to_m1/encoder.json",
+      "encoder_sha256": "30485608a18b8fee60b2768559a186ba7a74f70696f7306704895fbf5f64e73c",
+      "train_runs": [
+        "safety150_b1_m0_v8",
+        "safety150_a1_m0_v8"
+      ],
+      "replay_runs": [
+        "m1dev_v16_r01_b1",
+        "m1dev_v16_r02_a1"
+      ],
+      "reference": "ml5d"
+    },
+    {
+      "id": "ml5d_m1_to_m0_mask_age_s42",
+      "experiment": "ml5d",
+      "direction": "m1_to_m0",
+      "variant": "mask_age",
+      "seed": 42,
+      "checkpoint": "models/ml5d/m1_to_m0/mask_age_seed42.pt",
+      "checkpoint_sha256": "b81e194d39a966736e934845d3d877b532c073880937d0b57e24f5c3e18be3a5",
+      "encoder": "encoders/ml5d/m1_to_m0/encoder.json",
+      "encoder_sha256": "e1fe964744aef87d231a550890ec88fb4ade2811269b99b7f193095a617459e7",
+      "train_runs": [
+        "m1dev_v16_r01_b1",
+        "m1dev_v16_r02_a1"
+      ],
+      "replay_runs": [
+        "safety150_b1_m0_v8",
+        "safety150_a1_m0_v8"
+      ],
+      "reference": "ml5d"
+    },
+    {
+      "id": "ml5d_m1_to_m0_mask_age_s52",
+      "experiment": "ml5d",
+      "direction": "m1_to_m0",
+      "variant": "mask_age",
+      "seed": 52,
+      "checkpoint": "models/ml5d/m1_to_m0/mask_age_seed52.pt",
+      "checkpoint_sha256": "4bca80e642f4b17961f4007f81886dc8a8b7fecc2127e07efefa4361e7ae6d89",
+      "encoder": "encoders/ml5d/m1_to_m0/encoder.json",
+      "encoder_sha256": "e1fe964744aef87d231a550890ec88fb4ade2811269b99b7f193095a617459e7",
+      "train_runs": [
+        "m1dev_v16_r01_b1",
+        "m1dev_v16_r02_a1"
+      ],
+      "replay_runs": [
+        "safety150_b1_m0_v8",
+        "safety150_a1_m0_v8"
+      ],
+      "reference": "ml5d"
+    },
+    {
+      "id": "ml5d_m1_to_m0_mask_age_s62",
+      "experiment": "ml5d",
+      "direction": "m1_to_m0",
+      "variant": "mask_age",
+      "seed": 62,
+      "checkpoint": "models/ml5d/m1_to_m0/mask_age_seed62.pt",
+      "checkpoint_sha256": "e7d6c84457f3cb93ccde4ec1e9fffc87c019eebc963d162b8d5345e0a84d920c",
+      "encoder": "encoders/ml5d/m1_to_m0/encoder.json",
+      "encoder_sha256": "e1fe964744aef87d231a550890ec88fb4ade2811269b99b7f193095a617459e7",
+      "train_runs": [
+        "m1dev_v16_r01_b1",
+        "m1dev_v16_r02_a1"
+      ],
+      "replay_runs": [
+        "safety150_b1_m0_v8",
+        "safety150_a1_m0_v8"
+      ],
+      "reference": "ml5d"
+    },
+    {
+      "id": "ml5d_m1_to_m0_mask_s42",
+      "experiment": "ml5d",
+      "direction": "m1_to_m0",
+      "variant": "mask",
+      "seed": 42,
+      "checkpoint": "models/ml5d/m1_to_m0/mask_seed42.pt",
+      "checkpoint_sha256": "20e8522d4c7be75de623501d21cd0f69367d5c1a21fa43ccd4d08edaf3e10d3a",
+      "encoder": "encoders/ml5d/m1_to_m0/encoder.json",
+      "encoder_sha256": "e1fe964744aef87d231a550890ec88fb4ade2811269b99b7f193095a617459e7",
+      "train_runs": [
+        "m1dev_v16_r01_b1",
+        "m1dev_v16_r02_a1"
+      ],
+      "replay_runs": [
+        "safety150_b1_m0_v8",
+        "safety150_a1_m0_v8"
+      ],
+      "reference": "ml5d"
+    },
+    {
+      "id": "ml5d_m1_to_m0_mask_s52",
+      "experiment": "ml5d",
+      "direction": "m1_to_m0",
+      "variant": "mask",
+      "seed": 52,
+      "checkpoint": "models/ml5d/m1_to_m0/mask_seed52.pt",
+      "checkpoint_sha256": "47cbececa776041a1461eb1cd0c3272232f6667e163d62289788107b256d5e3f",
+      "encoder": "encoders/ml5d/m1_to_m0/encoder.json",
+      "encoder_sha256": "e1fe964744aef87d231a550890ec88fb4ade2811269b99b7f193095a617459e7",
+      "train_runs": [
+        "m1dev_v16_r01_b1",
+        "m1dev_v16_r02_a1"
+      ],
+      "replay_runs": [
+        "safety150_b1_m0_v8",
+        "safety150_a1_m0_v8"
+      ],
+      "reference": "ml5d"
+    },
+    {
+      "id": "ml5d_m1_to_m0_mask_s62",
+      "experiment": "ml5d",
+      "direction": "m1_to_m0",
+      "variant": "mask",
+      "seed": 62,
+      "checkpoint": "models/ml5d/m1_to_m0/mask_seed62.pt",
+      "checkpoint_sha256": "cde4d6e7c06faaa2d0b6d3e88ace6cf73ea54d31a1624f9af989b91e5984de17",
+      "encoder": "encoders/ml5d/m1_to_m0/encoder.json",
+      "encoder_sha256": "e1fe964744aef87d231a550890ec88fb4ade2811269b99b7f193095a617459e7",
+      "train_runs": [
+        "m1dev_v16_r01_b1",
+        "m1dev_v16_r02_a1"
+      ],
+      "replay_runs": [
+        "safety150_b1_m0_v8",
+        "safety150_a1_m0_v8"
+      ],
+      "reference": "ml5d"
+    },
+    {
+      "id": "ml5d_m1_to_m0_plain_s42",
+      "experiment": "ml5d",
+      "direction": "m1_to_m0",
+      "variant": "plain",
+      "seed": 42,
+      "checkpoint": "models/ml5d/m1_to_m0/plain_seed42.pt",
+      "checkpoint_sha256": "7d69dc65d95a0b2c79257facb7bdd526189be994ff2a0e0e3cf08307db549d73",
+      "encoder": "encoders/ml5d/m1_to_m0/encoder.json",
+      "encoder_sha256": "e1fe964744aef87d231a550890ec88fb4ade2811269b99b7f193095a617459e7",
+      "train_runs": [
+        "m1dev_v16_r01_b1",
+        "m1dev_v16_r02_a1"
+      ],
+      "replay_runs": [
+        "safety150_b1_m0_v8",
+        "safety150_a1_m0_v8"
+      ],
+      "reference": "ml5d"
+    },
+    {
+      "id": "ml5d_m1_to_m0_plain_s52",
+      "experiment": "ml5d",
+      "direction": "m1_to_m0",
+      "variant": "plain",
+      "seed": 52,
+      "checkpoint": "models/ml5d/m1_to_m0/plain_seed52.pt",
+      "checkpoint_sha256": "975702768f9126d636447506a1ac3a605aa14d928dc0506472a519f16a66eb98",
+      "encoder": "encoders/ml5d/m1_to_m0/encoder.json",
+      "encoder_sha256": "e1fe964744aef87d231a550890ec88fb4ade2811269b99b7f193095a617459e7",
+      "train_runs": [
+        "m1dev_v16_r01_b1",
+        "m1dev_v16_r02_a1"
+      ],
+      "replay_runs": [
+        "safety150_b1_m0_v8",
+        "safety150_a1_m0_v8"
+      ],
+      "reference": "ml5d"
+    },
+    {
+      "id": "ml5d_m1_to_m0_plain_s62",
+      "experiment": "ml5d",
+      "direction": "m1_to_m0",
+      "variant": "plain",
+      "seed": 62,
+      "checkpoint": "models/ml5d/m1_to_m0/plain_seed62.pt",
+      "checkpoint_sha256": "d4f47eeecd4c3ec25ff2f6ff1c71fe4cceb887e72b613e96eff29ab8babbf58d",
+      "encoder": "encoders/ml5d/m1_to_m0/encoder.json",
+      "encoder_sha256": "e1fe964744aef87d231a550890ec88fb4ade2811269b99b7f193095a617459e7",
+      "train_runs": [
+        "m1dev_v16_r01_b1",
+        "m1dev_v16_r02_a1"
+      ],
+      "replay_runs": [
+        "safety150_b1_m0_v8",
+        "safety150_a1_m0_v8"
+      ],
+      "reference": "ml5d"
+    }
+  ],
+  "limitations": [
+    "Development-only validation",
+    "Not proven robust to monitoring loss",
+    "M0/M1 protocol confounding",
+    "No independent final test",
+    "No online collector integration"
+  ]
+}
